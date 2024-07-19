@@ -88,7 +88,7 @@ app
       { $set: req.body }
     )
       .then(function (updatedArticle) {
-        console.log(updatedArticle);
+        // console.log(updatedArticle);
         if (updatedArticle.matchedCount != 0) {
           res.send("Successfully updated the article");
         } else {
